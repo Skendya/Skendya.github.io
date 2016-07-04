@@ -10,18 +10,20 @@ $(document).ready(function () {
   audioSrc.connect(audioCtx.destination);
 
   //var frequencyData = new Uint8Array(analyser.frequencyBinCount);
-  var frequencyData = new Uint8Array(200);
+  var frequencyData = new Uint8Array(100);
 
   var svgHeight = '300';
   var svgWidth = document.getElementById("container").offsetWidth;
-  var barPadding = '1';
+  var barPadding = '25';
 
   function createSvg(parent, height, width) {
     return d3.select(parent).append('svg').attr('height', height).attr('width', width);
   }
+    
+
 
   var svg = createSvg('body', svgHeight, svgWidth);
-
+   
   // Create our initial D3 chart.
   svg.selectAll('rect')
      .data(frequencyData)
@@ -30,7 +32,7 @@ $(document).ready(function () {
      .attr('x', function (d, i) {
         return i * (svgWidth / frequencyData.length);
      })
-     .attr('width', svgWidth / frequencyData.length - barPadding);
+     .attr('width', svgWidth / (frequencyData.length/4) - barPadding);
 
   // Continuously loop and update chart with frequency data.
   function renderChart() {
@@ -49,11 +51,13 @@ $(document).ready(function () {
            return d;
         })
         .attr('fill', function(d) {
-           return 'rgb(0, 0, ' + d + ')';
+           return 'rgb(' + (d+50) + ', ' + (d+50) + ', ' + d + ')';
         });
   }
 
   // Run the loop
   renderChart();
+    
+      $("svg").css({left: 100, position:'relative'});
 
 });

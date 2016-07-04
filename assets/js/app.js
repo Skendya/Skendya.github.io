@@ -10,11 +10,11 @@ $(document).ready(function () {
   audioSrc.connect(audioCtx.destination);
 
   //var frequencyData = new Uint8Array(analyser.frequencyBinCount);
-  var frequencyData = new Uint8Array(100);
+  var frequencyData = new Uint8Array(25);
 
   var svgHeight = '300';
   var svgWidth = document.getElementById("container").offsetWidth;
-  var barPadding = '25';
+  var barPadding = '105';
 
   function createSvg(parent, height, width) {
     return d3.select(parent).append('svg').attr('height', height).attr('width', width);
@@ -57,7 +57,7 @@ $(document).ready(function () {
 
   // Run the loop
   renderChart();
-    
+     
       $("svg").css({left: 100, position:'relative'});
 
 });

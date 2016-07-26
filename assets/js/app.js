@@ -14,7 +14,7 @@ $(document).ready(function () {
 
   var svgHeight = '300';
   var svgWidth = document.getElementById("container").offsetWidth;
-  var barPadding = '105';
+  var barPadding = '95';
 
   function createSvg(parent, height, width) {
     return d3.select(parent).append('svg').attr('height', height).attr('width', width);
@@ -59,5 +59,6 @@ $(document).ready(function () {
   renderChart();
      
       $("svg").css({left: 100, position:'relative'});
+    $("svg").attr("class", "filter-drop-shadow");
 
 });

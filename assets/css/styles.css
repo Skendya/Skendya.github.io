@@ -184,6 +184,8 @@ Single styles
     -moz-user-drag: none;
     -o-user-drag: none;
     user-drag: none; 
+    
+    image-rendering: pixelated;
 }
 
 .btn
@@ -252,14 +254,9 @@ Single styles
 
 
 .filter-drop-shadow {
-		-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
-		-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
-		-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
-		-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
-		filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+		-webkit-filter: drop-shadow(0px 0px 5px rgba(255, 242, 204, 0.8));
+        
 }
-
-
 
 /* -----------------------
 Wide styles

@@ -88,9 +88,50 @@ Single styles
 }
 
 /* -----------------------
-Visualizer Styles
+Visualisation Styles
 ------------------------*/
 
+/* Elves */
+.vis-item.elf {
+    background-color: #72d04f;
+    border-color: #57a03c;
+}
+
+/* Dwarves */
+.vis-item.dwarf {
+    background-color: #d0cb4f;
+    border-color: #9d993a;
+}
+
+/* Humans  */
+.vis-item.human {
+    background-color: #4f94d0;
+    border-color: #3b6e9a;
+}
+
+/* Orcs */
+.vis-item.orc {
+    background-color: #d04f4f;
+    border-color: #963939;
+}
+
+/* Protagonists */
+.vis-item.protag {
+    background-color: #ffffff;
+    border-color: #d1d1d1;
+}
+
+/* Antagonists */
+.vis-item.antag {
+    background-color: #414141;
+    border-color: #1d1d1d;
+}
+
+/* Neutrals */
+.vis-item.neutral {
+    background-color: #cecece;
+    border-color: #b5b5b5;
+}
 
 
 /* -----------------------

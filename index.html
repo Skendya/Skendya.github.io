@@ -17,9 +17,8 @@
 		<link rel="shortcut icon" href="favicon.ico">
         
         <!-- CSS -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css">
 		<link rel="stylesheet" href="assets/css/styles.css">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css"></link>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.js" charset="utf-8"></script>
       
@@ -41,7 +40,7 @@
   // Create a DataSet (allows two way data-binding)
 var items = new vis.DataSet([
      
-    //Periods
+    //Periods------------------------------------------
     {
         id: 'Aegis', 
         content: 'Aegis', 
@@ -50,12 +49,61 @@ var items = new vis.DataSet([
         type: 'background'
      },
     
-    //Events
+    //Events--------------------------------------------
     {
         id:'1', 
-        content:'Person Farts', 
+        content:'Elves!', 
         start:'2011-07-06', 
-        group: 1
+        group: 1,
+        className:'elf'
+    },
+    
+    {
+        id:'2', 
+        content:'Humans!', 
+        start:'2011-07-07', 
+        group: 1,
+        className:'human'
+    },
+    
+    {
+        id:'3', 
+        content:'Dwarves!', 
+        start:'2011-07-08', 
+        group: 1,
+        className:'dwarf'
+    },
+    
+    {
+        id:'4', 
+        content:'Orcs!', 
+        start:'2011-07-09', 
+        group: 1,
+        className:'orc'
+    },
+    
+    {
+        id:'5', 
+        content:'Protagonists!', 
+        start:'2011-07-10', 
+        group: 1,
+        className:'protag'
+    },
+    
+    {
+        id:'6', 
+        content:'Antagonists!', 
+        start:'2011-07-11', 
+        group: 1,
+        className:'antag'
+    },
+    
+    {
+        id:'7', 
+        content:'Neutrals!', 
+        start:'2011-07-12', 
+        group: 1,
+        className:'neutral'
     }
   
 ]);
@@ -73,15 +121,17 @@ var groups = new vis.DataSet([
   // Configuration for the Timeline
 var options = 
 {
-    start: '2011-06-04',
+    start: '2011-05-04',
     locale:'en-US',
-    min: new Date(2010, 12, 01),       
+    min: new Date(2010, 12, 01),
+    max: new Date(2016, 11, 11),
     zoomMin: 1000 * 60 * 60 * 24,
+    zoomMax: 1000 * 60 * 60 * 24 * 365 * 6,
     height: '100%'
 };
 
   // Create a Timeline
-  var timeline = new vis.Timeline(container, items, options, groups);                 
+  var timeline = new vis.Timeline(container, items, options, groups);           
                       
 </script>
 				</div>

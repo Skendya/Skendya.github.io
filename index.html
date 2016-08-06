@@ -31,6 +31,7 @@
 
 			<div class="content" style="background-image: url(./assets/img/GLASS.png);">
 				<div class="main">
+                    
 				<div id="visualization"></div>                
                     
                   <script type="text/javascript">
@@ -39,14 +40,14 @@
 
   // Create a DataSet (allows two way data-binding)
 var items = new vis.DataSet([
-     //Periods
+     
+    //Periods
     {
         id: 'Aegis', 
         content: 'Aegis', 
         start: '2011-06-04', 
         end: '2012-1-12', 
-        type: 'background', 
-        group: 1
+        type: 'background'
      },
     
     //Events
@@ -54,7 +55,7 @@ var items = new vis.DataSet([
         id:'1', 
         content:'Person Farts', 
         start:'2011-07-06', 
-        group: 2
+        group: 1
     }
   
 ]);
@@ -62,10 +63,11 @@ var items = new vis.DataSet([
 //Groups          
 var groups = new vis.DataSet([
     //Periods
-    {id: 1, content: 'Land'},
+    {
+        id: 1, 
+        content: ''
+    },
     
-    //Types
-    {id: 2, content: ''},
   ]);
                       
   // Configuration for the Timeline
@@ -75,10 +77,11 @@ var options =
     locale:'en-US',
     min: new Date(2010, 12, 01),       
     zoomMin: 1000 * 60 * 60 * 24,
+    height: '100%'
 };
 
   // Create a Timeline
-  var timeline = new vis.Timeline(container, items, options);                 
+  var timeline = new vis.Timeline(container, items, options, groups);                 
                       
 </script>
 				</div>

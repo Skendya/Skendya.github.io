@@ -87,8 +87,12 @@ Single styles
         
 }
 
+/* -----------------------------------------------
+TIMELINE
+------------------------------------------------*/
+
 /* -----------------------
-Visualisation Styles
+GROUPS
 ------------------------*/
 
 /* Elves */
@@ -133,6 +137,26 @@ Visualisation Styles
     border-color: #b5b5b5;
 }
 
+
+/* -----------------------
+REALMS
+------------------------*/
+
+.vis-item.realm {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #e5ef6c;
+    
+    border: 1px solid rgba(255, 255, 255, 0.79);
+    border-style:outset;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+aegis {
+     background-color: rgb(255, 0, 0);
+    
+}
 
 /* -----------------------
 Wide styles

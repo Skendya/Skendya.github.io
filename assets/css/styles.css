@@ -106,46 +106,45 @@ TIMELINE
 }
 
 p { margin:0 }
+
 /* -----------------------
 GROUPS
 ------------------------*/
 
-/* Elves */
 .vis-item.domestic {
     background-color: #dedabb;
     border-color: #777758;
 }
 
-/* Dwarves */
 .vis-item.diplomacy {
     background-color: #d8c2a6;
     border-color:  #836e56;
 }
 
-/* Humans  */
 .vis-item.conflict {
      background-color: #d3a7a7;
     border-color:  #845959;
 }
 
-/* Orcs */
 .vis-item.natural {
     background-color: #c0cc9f;
     border-color: #899665;
 }
 
 .vis-item.guilds {
-     background-color: #a5c2cb;
+    background-color: #a5c2cb;
     border-color: #587177;
 }
 
-/* Protagonists */
+.vis-item.economy {
+    background-color: #c7cba5;
+    border-color: #767758;
+}
 .vis-item.magic {
     background-color: #9b99c1;
     border-color:  #656596;
 }
 
-/* Antagonists */
 .vis-item.crown {
     background-color: #a07fb9;
     border-color: #604777;

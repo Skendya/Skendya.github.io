@@ -111,21 +111,21 @@ p { margin:0 }
 
   .vis-time-axis .vis-grid.vis-saturday,
   .vis-time-axis .vis-grid.vis-sunday {
-    background: rgba(162, 162, 0, 0.24);
+    background: rgba(160, 160, 92, 0.24);
   }
 
   .vis-time-axis .vis-grid.vis-monday,
   .vis-time-axis .vis-grid.vis-tuesday {
-     background: rgba(118, 70, 49, 0.24);
+     background: rgba(116, 91, 80, 0.24);
   }
 
   .vis-time-axis .vis-grid.vis-wednesday {
-    background: rgba(0, 118, 162, 0.24);
+    background: rgba(98, 145, 162, 0.24);
   }
 
   .vis-time-axis .vis-grid.vis-thursday,
   .vis-time-axis .vis-grid.vis-friday {
-    background: rgba(13, 167, 6, 0.24);
+    background: rgba(103, 165, 100, 0.24);
   }
 
 /* -----------------------

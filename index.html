@@ -29,7 +29,8 @@
     <div class="content" style="background-image: url(./assets/img/GLASS.png);">
        
         <div class="main">
-           
+            <p id="toptext" align="middle">MODERN HISTORY OF THE IMPERIUM OF MAN</p>
+				
             <div id="visualization"></div>                
             
             <script type="text/javascript">
@@ -133,7 +134,7 @@
                 {
                     id:'9', 
                     content:'<a href=" https://www.lordofthecraft.net/forums/topic/148857-the-act-of-the-imperial-lord-governor-1571/" target="_blank">Act of the Imperial Lord Governer</a><p>10th Sun&rsquo;s Smile 1571</p>', 
-                    start:'2016-08-07T22:00:00', 
+                    start:'2016-08-07T23:00:00', 
                     group: 1,
                     className:'crown'
                 },
@@ -161,9 +162,15 @@
                     group: 1,
                     className:'crown'
                 },
-                    
+               {
+                    id:'12', 
+                    content:'<a href="   https://www.lordofthecraft.net/forums/topic/148792-the-white-riders/" target="_blank">The White Riders Founded</a><p>10th Sun&rsquo;s Smile 1571</p>', 
+                    start:'2016-08-07T22:00:00', 
+                    group: 1,
+                    className:'guilds'
+                },     
                
-                    
+               
                    
             ]);
                 
@@ -179,11 +186,13 @@ var groups = new vis.DataSet([
                       
   // Configuration for the Timeline
 var options = {
+    start: new Date (2016, 07, 05),
+    end: new Date (2016, 07, 10),
     locale:'en-US',
     zoom: 1000 * 60 * 60,
     min: new Date(2016, 06, 01),
     max: new Date(2017, 01, 12),
-    zoomMin: 1000 * 60 * 60 * 24,
+    zoomMin: 1000 * 60 * 60 * 6,
     zoomMax: 1000 * 60 * 60 * 24 * 365 * 6,
     height: '100%'
 };
@@ -193,7 +202,7 @@ var options = {
   var timeline = new vis.Timeline(container, items, options, groups);
 </script>
             
-            
+            <div> <p class="vistext" align="right">Click and drag to scroll. Mousewheel to zoom.</p></div>
 				</div>
         
             </div>

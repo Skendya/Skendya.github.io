@@ -45,7 +45,6 @@ img.center {
 
 }
 
-
 .main 
 {
     height:100%;
@@ -68,7 +67,7 @@ img.center {
     border-radius: 0px 0px 0px 0px;
     -moz-border-radius: 0px 0px 0px 0px;
     -webkit-border-radius: 0px 0px 0px 0px;
-    border: 10px solid rgba(0,0,0,0.5);
+    border: 10px solid rgba(11, 11, 11, 0.37);
     border-style:inset;
     box-sizing: border-box;
     -moz-box-sizing: border-box;

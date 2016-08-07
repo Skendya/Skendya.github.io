@@ -102,8 +102,10 @@ TIMELINE
 
 .vis-item{
     font-size:0.75em;
+
 }
 
+p { margin:0 }
 /* -----------------------
 GROUPS
 ------------------------*/

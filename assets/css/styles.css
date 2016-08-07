@@ -119,6 +119,7 @@ p { margin:0 }
 #helptextleft6{color:#c7cba5; float:left;}
 #helptextleft7{color:#9b99c1; float:left;}
 #helptextleft8{color:#a07fb9; float:left;}
+.spantext{float:left; font-weight:600; color:darkgrey;}
 
 #toptext{
     color:rgba(216, 216, 216, 0.81);
@@ -159,8 +160,8 @@ GROUPS
 }
 
 .vis-item.economy {
-    background-color: #c7cba5;
-    border-color: #767758;
+    background-color: #cba5c1;
+    border-color: #775877;
 }
 .vis-item.magic {
     background-color: #9b99c1;

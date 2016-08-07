@@ -107,9 +107,10 @@ TIMELINE
 p { margin:0 }
 
 #helptextright{
-    color:rgba(240, 240, 240, 0.5);
+    color:darkgrey;
     float:right;
      font-size:0.8em;
+    font-weight:600;
 }
 
 #helptextleft1{color:#dedabb; float:left; font-size:0.8em;}

@@ -106,9 +106,19 @@ TIMELINE
 
 p { margin:0 }
 
-.vistext{
+#helptextright{
     color:rgba(240, 240, 240, 0.5);
+    float:right;
 }
+
+#helptextleft1{color:#dedabb; float:left;}
+#helptextleft2{color:#d8c2a6; float:left;}
+#helptextleft3{color:#d3a7a7; float:left;}
+#helptextleft4{color:#c0cc9f; float:left;}
+#helptextleft5{color:#a5c2cb; float:left;}
+#helptextleft6{color:#c7cba5; float:left;}
+#helptextleft7{color:#9b99c1; float:left;}
+#helptextleft8{color:#a07fb9; float:left;}
 
 #toptext{
     color:rgba(216, 216, 216, 0.81);

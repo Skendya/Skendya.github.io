@@ -107,6 +107,10 @@ TIMELINE
 
 p { margin:0 }
 
+#loading{
+    color: #e5ef6c;
+}
+
 /* -----------------------
 GROUPS
 ------------------------*/

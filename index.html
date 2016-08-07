@@ -27,22 +27,19 @@
     <div id="container" class="container">
 
     <div class="content" style="background-image: url(./assets/img/GLASS.png);">
+       
         <div class="main">
+           
             <div id="visualization"></div>                
+            
             <script type="text/javascript">
-                
-                   
-                
+           
               // DOM element where the Timeline will be attached
                 var container = document.getElementById('visualization');
                 
                 // Create a DataSet (allows two way data-binding)
-                var items = new vis.DataSet({
-                 type: { start: 'ISODate', end: 'ISODate' }
-                })
-                                            
-            items.add([
-     
+                var items = new vis.DataSet([
+               
                 // Realm
                 {
                     id: 'Axios', 
@@ -71,6 +68,14 @@
                 }, 
                 
                 {
+                    id:'2.5', 
+                    content:'<a href="https://www.lordofthecraft.net/forums/topic/148781-the-call-of-yeu-and-the-first-augury/" target="_blank">Augury of Yeu Rthulu Founded in Sutica</a><p>8th Grand Harvest 1571</p>', 
+                    start:'2016-08-07', 
+                    group: 1,
+                    className:'magic'
+                }, 
+                
+                {
                     id:'3', 
                     content:'<a href="https://www.lordofthecraft.net/forums/topic/148807-johannesburg-capital-police/" target="_blank">Johannesburg Capital Police Founded</a><p>12th Grand Harvest 1571</p>', 
                     start:'2016-08-07', 
@@ -87,7 +92,7 @@
                 }, 
                 
                 {
-                    id:'7', 
+                    id:'4.5', 
                     content:'<a href="https://www.lordofthecraft.net/forums/topic/148793-augusts-boots/" target="_blank">August&rsquo;s Boots Opens</a><p>13th Grand Harvest 1571</p>', 
                     start:'2016-08-07', 
                     group: 1,
@@ -108,9 +113,16 @@
                     start:'2016-08-07', 
                     group: 1,
                     className:'domestic'
-                },   
-               
-             
+                },
+                
+                {
+                    id:'7', 
+                    content:'<a href=" https://www.lordofthecraft.net/forums/topic/148830-the-profession-mandate/" target="_blank">Dwarven Act of Tradesmen</a><p>3rd Sun&rsquo;s Smile 1571</p>', 
+                    start:'2016-08-07', 
+                    group: 1,
+                    className:'diplomacy'
+                },  
+           
             ]);
                 
 //Groups          
@@ -119,28 +131,33 @@ var groups = new vis.DataSet([
     {
         id: 1, 
         content: ''
-    },
+    }
     
   ]);
                       
   // Configuration for the Timeline
-var options = 
-{
+var options = {
     locale:'en-US',
-    min: new Date(2016, 01, 01),
-    max: new Date(2019, 01, 01),
-    zoomMin: 864000000,
+    zoom: 1000 * 60 * 60,
+    min: new Date(2016, 06, 01),
+    max: new Date(2017, 01, 12),
+    zoomMin: 1000 * 60 * 60 * 24 * 2,
     zoomMax: 1000 * 60 * 60 * 24 * 365 * 6,
     height: '100%'
 };
-
+                
+                
   // Create a Timeline
-  var timeline = new vis.Timeline(container, items, options, groups);    
+  var timeline = new vis.Timeline(container, items, options, groups);
+    
+                document.getElementById('fit').onclick = function() {
+    timeline.fit();
+  };    
 </script>
             
             
 				</div>
-			
+        <input class="visbutton" type="button" id="fit" value="<->"><br>
             </div>
 			
         </div>

@@ -15,6 +15,27 @@ body
 overflow:hidden;
 }
 
+#logo
+{
+    margin-left:42.5vw;
+    margin-right:auto;
+    z-index:10;
+    width:1px;
+    height:1px;
+    
+    
+    
+}
+
+#logoimg
+{
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(255, 213, 90, 0.8));
+    height:auto;
+    width:15vw;
+    max-width:90px;
+    
+}
+
 .container
 {
 	max-width: 90em;
@@ -82,10 +103,6 @@ Single styles
     image-rendering: pixelated;
 }
 
-.filter-drop-shadow {
-		-webkit-filter: drop-shadow(0px 0px 5px rgba(255, 242, 204, 0.8));
-        
-}
 
 /* -----------------------------------------------
 TIMELINE
@@ -151,11 +168,6 @@ REALMS
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-}
-
-aegis {
-     background-color: rgb(255, 0, 0);
-    
 }
 
 /* -----------------------

@@ -30,11 +30,18 @@
         <div class="main">
             <div id="visualization"></div>                
             <script type="text/javascript">
-                // DOM element where the Timeline will be attached
+                
+                   
+                
+              // DOM element where the Timeline will be attached
                 var container = document.getElementById('visualization');
                 
                 // Create a DataSet (allows two way data-binding)
-                var items = new vis.DataSet([
+                var items = new vis.DataSet({
+                 type: { start: 'ISODate', end: 'ISODate' }
+                })
+                                            
+            items.add([
      
                 // Realm
                 {
@@ -49,14 +56,22 @@
                 // Events
                 {
                     id:'1', 
-                    content:'Imperial Laws Reaffirmed', 
+                    content:'<a href="https://www.lordofthecraft.net/forums/topic/148769-imperial-citizenship/" target="_blank">Imperial Laws Reaffirmed</a>', 
                     start:'2016-08-06', 
                     group: 1,
-                    className:'elf'
+                    className:'domestic'
                 },
+                
+                 {
+                    id:'2', 
+                    content:'Imperial Citizenry Reopened', 
+                    start:'2016-08-06', 
+                    group: 1,
+                    className:'domestic'
+                }, 
 
             ]);
-
+                
 //Groups          
 var groups = new vis.DataSet([
     //Periods
@@ -70,19 +85,19 @@ var groups = new vis.DataSet([
   // Configuration for the Timeline
 var options = 
 {
-   
     locale:'en-US',
     min: new Date(2016, 01, 01),
     max: new Date(2019, 01, 01),
-    zoomMin: 1000 * 60 * 60 * 24,
+    zoomMin: 864000000,
     zoomMax: 1000 * 60 * 60 * 24 * 365 * 6,
     height: '100%'
 };
 
   // Create a Timeline
-  var timeline = new vis.Timeline(container, items, options, groups);           
-                      
+  var timeline = new vis.Timeline(container, items, options, groups);    
 </script>
+            
+            
 				</div>
 			
             </div>

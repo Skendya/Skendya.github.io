@@ -105,47 +105,40 @@ GROUPS
 ------------------------*/
 
 /* Elves */
-.vis-item.elf {
-    background-color: #72d04f;
-    border-color: #57a03c;
+.vis-item.domestic {
+    background-color: #dedabb;
+    border-color: #777758;
 }
 
 /* Dwarves */
-.vis-item.dwarf {
-    background-color: #d0cb4f;
-    border-color: #9d993a;
+.vis-item.diplomacy {
+    background-color: #d8c2a6;
+    border-color:  #836e56;
 }
 
 /* Humans  */
-.vis-item.human {
-    background-color: #4f94d0;
-    border-color: #3b6e9a;
+.vis-item.conflict {
+     background-color: #d3a7a7;
+    border-color:  #845959;
 }
 
 /* Orcs */
-.vis-item.orc {
-    background-color: #d04f4f;
-    border-color: #963939;
+.vis-item.internal {
+    background-color: #c0cc9f;
+    border-color: #899665;
 }
 
 /* Protagonists */
-.vis-item.protag {
-    background-color: #ffffff;
-    border-color: #d1d1d1;
+.vis-item.magic {
+    background-color: #9b99c1;
+    border-color:  #656596;
 }
 
 /* Antagonists */
-.vis-item.antag {
-    background-color: #414141;
-    border-color: #1d1d1d;
+.vis-item.crown {
+    background-color: #a07fb9;
+    border-color: #604777;
 }
-
-/* Neutrals */
-.vis-item.neutral {
-    background-color: #cecece;
-    border-color: #b5b5b5;
-}
-
 
 /* -----------------------
 REALMS

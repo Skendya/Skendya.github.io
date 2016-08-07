@@ -109,21 +109,23 @@ p { margin:0 }
 #helptextright{
     color:rgba(240, 240, 240, 0.5);
     float:right;
+     font-size:0.8em;
 }
 
-#helptextleft1{color:#dedabb; float:left;}
-#helptextleft2{color:#d8c2a6; float:left;}
-#helptextleft3{color:#d3a7a7; float:left;}
-#helptextleft4{color:#c0cc9f; float:left;}
-#helptextleft5{color:#a5c2cb; float:left;}
-#helptextleft6{color:#c7cba5; float:left;}
-#helptextleft7{color:#9b99c1; float:left;}
-#helptextleft8{color:#a07fb9; float:left;}
-.spantext{float:left; font-weight:600; color:darkgrey;}
+#helptextleft1{color:#dedabb; float:left; font-size:0.8em;}
+#helptextleft2{color:#d8c2a6; float:left; font-size:0.8em;}
+#helptextleft3{color:#d3a7a7; float:left; font-size:0.8em;}
+#helptextleft4{color:#c0cc9f; float:left; font-size:0.8em;}
+#helptextleft5{color:#a5c2cb; float:left; font-size:0.8em;}
+#helptextleft6{color:#c7cba5; float:left; font-size:0.8em;}
+#helptextleft7{color:#9b99c1; float:left; font-size:0.8em;}
+#helptextleft8{color:#a07fb9; float:left; font-size:0.8em;}
+.spantext{float:left; font-weight:600; color:darkgrey; font-size:0.8em;}
 
 #toptext{
-    color:rgba(216, 216, 216, 0.81);
+    color:rgba(216, 216, 216, 0.81 );
     font-weight:600;
+     font-size:1em;
 }
 .vis-text.vis-major
 {

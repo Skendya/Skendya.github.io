@@ -188,6 +188,15 @@ GROUPS
     border-color: #604777;
 }
 
+.vis-item.horen {
+    background-image:url("../../assets/img/horen.png"); 
+    background-origin:border-box;
+    background-size:26px;
+      border-color: #604777;
+    font-weight:600;
+    background-attachment:local;
+}
+
 /* -----------------------
 REALMS
 ------------------------*/

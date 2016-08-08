@@ -20,182 +20,181 @@
 </head>
   
 <body style="background-image: url(./assets/img/STONE.png);">
+    
+    <!-- Logo Div -->
     <div id=logo>
         <img id="logoimg" src="https://lh4.googleusercontent.com/AiP5fMu7LQb7mcSEIEZ9c7EmUhBj1p6bECbvuUoa3Ig9tSolutKwmrHvdAQzF2FeeeHGKfW1qcI0-5LbH4cSGPib-dy-3PzHH7mYlRW7fEbeLOjDRZYJ39dcFVp5dvbhiporQm8s" class="center">
     </div>
-        
+   
     <div id="container" class="container">
-
+     
     <div class="content" style="background-image: url(./assets/img/GLASS.png);">
        
         <div class="main">
             <p id="toptext" align="middle">MODERN HISTORY OF THE IMPERIUM OF MAN</p>
 				
             <div id="visualization"></div>                
-            
-            <script type="text/javascript">
+<!-- Visualization: Timeline Script. Excuse the lack of indent. -->         
+<script type="text/javascript">
            
-              // DOM element where the Timeline will be attached
-                var container = document.getElementById('visualization');
-                
-                // Create a DataSet (allows two way data-binding)
-                var items = new vis.DataSet([
-               
-                // Realm
-                {
-                    id: 'Axios', 
-                    content: 'Axios', 
-                    start: '2016-08-05', 
-                    end: '2019-10-10', 
-                    type: 'background',
-                    className:'realm'
-                },
+    var container = document.getElementById('visualization');
 
-                // Events
-                {
-                    id:'1', 
-                    content:'<a href="https://www.lordofthecraft.net/forums/topic/148772-imperial-law-of-the-holy-orenian-empire/" target="_blank">Imperial Laws Reaffirmed</a><p>6th Grand Harvest 1571</p>', 
-                    start:'2016-08-06T18:00:00', 
-                    group: 1,
-                    className:'domestic'
-                },
-                
-                {
-                    id:'2', 
-                    content:'<a href="https://www.lordofthecraft.net/forums/topic/148769-imperial-citizenship/" target="_blank">Imperial Citizenship Reopened</a><p>8th Grand Harvest 1571</p>', 
-                    start:'2016-08-06T20:00:00', 
-                    group: 1,
-                    className:'domestic'
-                }, 
-                
-                {
-                    id:'2.5', 
-                    content:'<a href="https://www.lordofthecraft.net/forums/topic/148781-the-call-of-yeu-and-the-first-augury/" target="_blank">Augury of Yeu Rthulu Founded in Sutica</a><p>8th Grand Harvest 1571</p>', 
-                    start:'2016-08-06T20:00:00', 
-                    group: 1,
-                    className:'magic'
-                }, 
-                
-                {
-                    id:'3', 
-                    content:'<a href="https://www.lordofthecraft.net/forums/topic/148807-johannesburg-capital-police/" target="_blank">Johannesburg Capital Police Founded</a><p>12th Grand Harvest 1571</p>', 
-                    start:'2016-08-07T00:00:00', 
-                    group: 1,
-                    className:'domestic'
-                }, 
-                
-                {
-                    id:'4', 
-                    content:'<a href="https://www.lordofthecraft.net/forums/topic/148794-the-legend-returns/" target="_blank">Rick Felder Returns</a><p>13th Grand Harvest 1571</p>', 
-                    start:'2016-08-07T01:00:00', 
-                    group: 1,
-                    className:'domestic'
-                }, 
-                
-                {
-                    id:'4.5', 
-                    content:'<a href="https://www.lordofthecraft.net/forums/topic/148793-augusts-boots/" target="_blank">August&rsquo;s Boots Opens</a><p>13th Grand Harvest 1571</p>', 
-                    start:'2016-08-07T01:00:00', 
-                    group: 1,
-                    className:'domestic'
-                },  
-                
-                {
-                    id:'5', 
-                    content:'<a href="https://www.lordofthecraft.net/forums/topic/148806-brotherhood-of-the-golden-crow/" target="_blank">Brotherhood of the Golden Crow Founded</a><p>15th Grand Harvest 1571</p>', 
-                    start:'2016-08-07T03:00:00', 
-                    group: 1,
-                    className:'guilds'
-                }, 
-                
-                {
-                    id:'6', 
-                    content:'<a href="https://www.lordofthecraft.net/forums/topic/148812-imperial-office-of-administration/" target="_blank">Imperial Office of Administration Refounded</a><p>16th Grand Harvest 1571</p>', 
-                    start:'2016-08-07T04:00:00', 
-                    group: 1,
-                    className:'domestic'
-                },
+    var items = new vis.DataSet([
                
-               {
-                    id:'8', 
-                    content:'<a href=" https://www.lordofthecraft.net/forums/topic/148851-the-imperial-court/" target="_blank">Imperial Court Opens</a><p>9th Sun&rsquo;s Smile 1571</p>', 
-                    start:'2016-08-07T21:00:00', 
-                    group: 1,
-                    className:'domestic'
-                },  
-                    
-                {
-                    id:'9', 
-                    content:'<a href=" https://www.lordofthecraft.net/forums/topic/148857-the-act-of-the-imperial-lord-governor-1571/" target="_blank">Act of the Imperial Lord Governer</a><p>10th Sun&rsquo;s Smile 1571</p>', 
-                    start:'2016-08-07T23:00:00', 
-                    group: 1,
-                    className:'crown'
-                },
-                    
-                {
-                    id:'10', 
-                    content:'<a href="  https://www.lordofthecraft.net/forums/topic/148853-imperial-letters-for-the-barony-of-morton-1571" target="_blank">Imperial Letters: Barony of Morton</a><p>10th Sun&rsquo;s Smile 1571</p>', 
-                    start:'2016-08-07T22:00:00', 
-                    group: 1,
-                    className:'crown'
-                },
-                    
-                {
-                    id:'10.5', 
-                    content:'<a href="   https://www.lordofthecraft.net/forums/topic/148848-the-imperial-johannesburg-games/" target="_blank">The Imperial Johannesburg Games</a><p>9th Sun&rsquo;s Smile 1571</p>', 
-                    start:'2016-08-07T21:00:00', 
-                    group: 1,
-                    className:'domestic'
-                }, 
-                    
-                {
-                    id:'11', 
-                    content:'<a href="  https://www.lordofthecraft.net/forums/topic/148852-imperial-writ-of-ennoblement-for-the-house-of-crast-1571" target="_blank">Imperial Writ: Ennoblement of House Crast</a><p>10th Sun&rsquo;s Smile 1571</p>', 
-                    start:'2016-08-07T22:00:00', 
-                    group: 1,
-                    className:'crown'
-                },
-                    
-               {
-                    id:'12', 
-                    content:'<a href="   https://www.lordofthecraft.net/forums/topic/148792-the-white-riders/" target="_blank">The White Riders Founded</a><p>10th Sun&rsquo;s Smile 1571</p>', 
-                    start:'2016-08-07T22:00:00', 
-                    group: 1,
-                    className:'guilds'
-                }, 
-                    
-                {
-                    id:'13', 
-                    content:'<a href="   https://www.lordofthecraft.net/forums/topic/148865-restoring-reverence/" target="_blank">Thesis: Restoring Reverence</a><p>12th Sun&rsquo;s Smile 1571</p>', 
-                    start:'2016-08-08T00:00:00', 
-                    group: 1,
-                    className:'church'
-                },   
-                    
-                {
-                    id:'14', 
-                    content:'<a href="   https://www.lordofthecraft.net/forums/topic/148885-the-imperial-preserve-act-1571/" target="_blank">Imperial Preserve Act Enacted</a><p>20th Sun&rsquo;s Smile 1571</p>', 
-                    start:'2016-08-08T08:00:00', 
-                    group: 1,
-                    className:'crown'
-                },  
-                    
-                {
-                    id:'15', 
-                    content:'<a href="    https://www.lordofthecraft.net/forums/topic/148886-imperial-letters-for-the-county-of-nantes-1571/" target="_blank">Imperial Letters: County of Nantes</a><p>21st Sun&rsquo;s Smile 1571</p>', 
-                    start:'2016-08-08T09:00:00', 
-                    group: 1,
-                    className:'crown'
-                },         
-                {
-                    id:'16', 
-                    content:'<a href="    https://www.lordofthecraft.net/forums/topic/148887-imperial-letters-for-the-county-of-hearth-1571/" target="_blank">Imperial Letters: County of Hearth</a><p>21st Sun&rsquo;s Smile 1571</p>', 
-                    start:'2016-08-08T09:00:00', 
-                    group: 1,
-                    className:'crown'
-                },   
+        // Realm
+        {
+            id: 'Axios', 
+            content: 'Axios', 
+            start: '2016-08-05', 
+            end: '2019-10-10', 
+            type: 'background',
+            className:'realm'
+        },
+
+        // Events
+        {
+            id:'1', 
+            content:'<a href="https://www.lordofthecraft.net/forums/topic/148772-imperial-law-of-the-holy-orenian-empire/" target="_blank">Imperial Laws Reaffirmed</a><p>6th Grand Harvest 1571</p>', 
+            start:'2016-08-06T18:00:00', 
+            group: 1,
+            className:'domestic'
+        },
+
+        {
+            id:'2', 
+            content:'<a href="https://www.lordofthecraft.net/forums/topic/148769-imperial-citizenship/" target="_blank">Imperial Citizenship Reopened</a><p>8th Grand Harvest 1571</p>', 
+            start:'2016-08-06T20:00:00', 
+            group: 1,
+            className:'domestic'
+        }, 
+
+        {
+            id:'2.5', 
+            content:'<a href="https://www.lordofthecraft.net/forums/topic/148781-the-call-of-yeu-and-the-first-augury/" target="_blank">Augury of Yeu Rthulu Founded in Sutica</a><p>8th Grand Harvest 1571</p>', 
+            start:'2016-08-06T20:00:00', 
+            group: 1,
+            className:'magic'
+        }, 
+
+        {
+            id:'3', 
+            content:'<a href="https://www.lordofthecraft.net/forums/topic/148807-johannesburg-capital-police/" target="_blank">Johannesburg Capital Police Founded</a><p>12th Grand Harvest 1571</p>', 
+            start:'2016-08-07T00:00:00', 
+            group: 1,
+            className:'domestic'
+        }, 
+
+        {
+            id:'4', 
+            content:'<a href="https://www.lordofthecraft.net/forums/topic/148794-the-legend-returns/" target="_blank">Rick Felder Returns</a><p>13th Grand Harvest 1571</p>', 
+            start:'2016-08-07T01:00:00', 
+            group: 1,
+            className:'domestic'
+        }, 
+
+        {
+            id:'4.5', 
+            content:'<a href="https://www.lordofthecraft.net/forums/topic/148793-augusts-boots/" target="_blank">August&rsquo;s Boots Opens</a><p>13th Grand Harvest 1571</p>', 
+            start:'2016-08-07T01:00:00', 
+            group: 1,
+            className:'domestic'
+        },  
+
+        {
+            id:'5', 
+            content:'<a href="https://www.lordofthecraft.net/forums/topic/148806-brotherhood-of-the-golden-crow/" target="_blank">Brotherhood of the Golden Crow Founded</a><p>15th Grand Harvest 1571</p>', 
+            start:'2016-08-07T03:00:00', 
+            group: 1,
+            className:'guilds'
+        }, 
+
+        {
+            id:'6', 
+            content:'<a href="https://www.lordofthecraft.net/forums/topic/148812-imperial-office-of-administration/" target="_blank">Imperial Office of Administration Refounded</a><p>16th Grand Harvest 1571</p>', 
+            start:'2016-08-07T04:00:00', 
+            group: 1,
+            className:'domestic'
+        },
+        {
+            id:'8', 
+            content:'<a href=" https://www.lordofthecraft.net/forums/topic/148851-the-imperial-court/" target="_blank">Imperial Court Opens</a><p>9th Sun&rsquo;s Smile 1571</p>', 
+            start:'2016-08-07T21:00:00', 
+            group: 1,
+            className:'domestic'
+        },  
+
+        {
+            id:'9', 
+            content:'<a href=" https://www.lordofthecraft.net/forums/topic/148857-the-act-of-the-imperial-lord-governor-1571/" target="_blank">Act of the Imperial Lord Governer</a><p>10th Sun&rsquo;s Smile 1571</p>', 
+            start:'2016-08-07T23:00:00', 
+            group: 1,
+            className:'crown'
+        },
+
+        {
+            id:'10', 
+            content:'<a href="  https://www.lordofthecraft.net/forums/topic/148853-imperial-letters-for-the-barony-of-morton-1571" target="_blank">Imperial Letters: Barony of Morton</a><p>10th Sun&rsquo;s Smile 1571</p>', 
+            start:'2016-08-07T22:00:00', 
+            group: 1,
+            className:'crown'
+        },
+
+        {
+            id:'10.5', 
+            content:'<a href="   https://www.lordofthecraft.net/forums/topic/148848-the-imperial-johannesburg-games/" target="_blank">The Imperial Johannesburg Games</a><p>9th Sun&rsquo;s Smile 1571</p>', 
+            start:'2016-08-07T21:00:00', 
+            group: 1,
+            className:'domestic'
+        }, 
+
+        {
+            id:'11', 
+            content:'<a href="  https://www.lordofthecraft.net/forums/topic/148852-imperial-writ-of-ennoblement-for-the-house-of-crast-1571" target="_blank">Imperial Writ: Ennoblement of House Crast</a><p>10th Sun&rsquo;s Smile 1571</p>', 
+            start:'2016-08-07T22:00:00', 
+            group: 1,
+            className:'crown'
+        },
+
+       {
+            id:'12', 
+            content:'<a href="   https://www.lordofthecraft.net/forums/topic/148792-the-white-riders/" target="_blank">The White Riders Founded</a><p>10th Sun&rsquo;s Smile 1571</p>', 
+            start:'2016-08-07T22:00:00', 
+            group: 1,
+            className:'guilds'
+        }, 
+
+        {
+            id:'13', 
+            content:'<a href="   https://www.lordofthecraft.net/forums/topic/148865-restoring-reverence/" target="_blank">Thesis: Restoring Reverence</a><p>12th Sun&rsquo;s Smile 1571</p>', 
+            start:'2016-08-08T00:00:00', 
+            group: 1,
+            className:'church'
+        },   
+
+        {
+            id:'14', 
+            content:'<a href="   https://www.lordofthecraft.net/forums/topic/148885-the-imperial-preserve-act-1571/" target="_blank">Imperial Preserve Act Enacted</a><p>20th Sun&rsquo;s Smile 1571</p>', 
+            start:'2016-08-08T08:00:00', 
+            group: 1,
+            className:'crown'
+        },  
+
+        {
+            id:'15', 
+            content:'<a href="    https://www.lordofthecraft.net/forums/topic/148886-imperial-letters-for-the-county-of-nantes-1571/" target="_blank">Imperial Letters: County of Nantes</a><p>21st Sun&rsquo;s Smile 1571</p>', 
+            start:'2016-08-08T09:00:00', 
+            group: 1,
+            className:'crown'
+        },         
+        {
+            id:'16', 
+            content:'<a href="    https://www.lordofthecraft.net/forums/topic/148887-imperial-letters-for-the-county-of-hearth-1571/" target="_blank">Imperial Letters: County of Hearth</a><p>21st Sun&rsquo;s Smile 1571</p>', 
+            start:'2016-08-08T09:00:00', 
+            group: 1,
+            className:'crown'
+        },   
                  
-            ]);
+    ]);
                 
 //Groups          
 var groups = new vis.DataSet([
@@ -223,26 +222,26 @@ var options = {
   var timeline = new vis.Timeline(container, items, options, groups);
                 
 </script>
+         
+                <div>
+                    <span class="spantext">Key: |</span>
+                    <span id="helptextleft1">[Domestic]</span>
+                    <span id="helptextleft2">[Diplomacy]</span>
+                    <span id="helptextleft3">[Conflict]</span>
+                    <span id="helptextleft4">[Natural]</span>
+                    <span id="helptextleft5">[Guilds]</span>
+                    <span id="helptextleft6">[Church]</span>
+                    <span id="helptextleft7">[Magical]</span>
+                    <span id="helptextleft8">[Crown]</span><span    class="spantext">|</span>
+                    <span id="helptextright">Drag to scroll. Mousewheel to zoom.    </span>
+                </div>
             
-            <div>
-                <span class="spantext">Key: |</span>
-                <span id="helptextleft1">[Domestic]</span>
-                <span id="helptextleft2">[Diplomacy]</span>
-                <span id="helptextleft3">[Conflict]</span>
-                <span id="helptextleft4">[Natural]</span>
-                <span id="helptextleft5">[Guilds]</span>
-                <span id="helptextleft6">[Church]</span>
-                <span id="helptextleft7">[Magical]</span>
-                <span id="helptextleft8">[Crown]</span><span class="spantext">|</span>
-                <span id="helptextright">Drag to scroll. Mousewheel to zoom.</span>
-            </div>
-				</div>
+            </div>       
         
-            </div>
-			
-        </div>
-        
-      
-    </body>
+        </div>			
+    
+    </div>
+    
+</body>
     
 </html>

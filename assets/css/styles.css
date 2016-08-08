@@ -191,6 +191,9 @@ REALMS
     -webkit-box-sizing: border-box;
 }
 
+.vis-current-time-label{
+    position:relative;
+}
 
 /* -----------------------
 Wide styles

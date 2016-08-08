@@ -113,14 +113,14 @@ p { margin:0 }
     font-weight:600;
 }
 
-#helptextleft1{color:#dedabb; float:left; font-size:0.8em;}
-#helptextleft2{color:#d8c2a6; float:left; font-size:0.8em;}
-#helptextleft3{color:#d3a7a7; float:left; font-size:0.8em;}
-#helptextleft4{color:#c0cc9f; float:left; font-size:0.8em;}
-#helptextleft5{color:#a5c2cb; float:left; font-size:0.8em;}
-#helptextleft6{color:#c7cba5; float:left; font-size:0.8em;}
-#helptextleft7{color:#9b99c1; float:left; font-size:0.8em;}
-#helptextleft8{color:#a07fb9; float:left; font-size:0.8em;}
+#helptextleft1{background-color:#dedabb; float:left; font-size:0.8em;}
+#helptextleft2{background-color:#d8c2a6; float:left; font-size:0.8em;}
+#helptextleft3{background-color:#d3a7a7; float:left; font-size:0.8em;}
+#helptextleft4{background-color:#c0cc9f; float:left; font-size:0.8em;}
+#helptextleft5{background-color:#a5c2cb; float:left; font-size:0.8em;}
+#helptextleft6{background-color:#cba5c1; float:left; font-size:0.8em;}
+#helptextleft7{background-color:#9b99c1; float:left; font-size:0.8em;}
+#helptextleft8{background-color:#a07fb9; float:left; font-size:0.8em;}
 .spantext{float:left; font-weight:600; color:darkgrey; font-size:0.8em;}
 
 #toptext{

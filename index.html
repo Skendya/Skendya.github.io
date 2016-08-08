@@ -182,14 +182,14 @@
                     
                 {
                     id:'15', 
-                    content:'<a href="    https://www.lordofthecraft.net/forums/topic/148886-imperial-letters-for-the-county-of-nantes-1571/" target="_blank">Imperial Letters: County of Nantes</a><p>20th Sun&rsquo;s Smile 1571</p>', 
+                    content:'<a href="    https://www.lordofthecraft.net/forums/topic/148886-imperial-letters-for-the-county-of-nantes-1571/" target="_blank">Imperial Letters: County of Nantes</a><p>21st Sun&rsquo;s Smile 1571</p>', 
                     start:'2016-08-08T09:00:00', 
                     group: 1,
                     className:'crown'
                 },         
                 {
                     id:'16', 
-                    content:'<a href="    https://www.lordofthecraft.net/forums/topic/148887-imperial-letters-for-the-county-of-hearth-1571/" target="_blank">Imperial Letters: County of Hearth</a><p>20th Sun&rsquo;s Smile 1571</p>', 
+                    content:'<a href="    https://www.lordofthecraft.net/forums/topic/148887-imperial-letters-for-the-county-of-hearth-1571/" target="_blank">Imperial Letters: County of Hearth</a><p>21st Sun&rsquo;s Smile 1571</p>', 
                     start:'2016-08-08T09:00:00', 
                     group: 1,
                     className:'crown'
@@ -209,8 +209,8 @@ var groups = new vis.DataSet([
                       
   // Configuration for the Timeline
 var options = {
-    start: new Date (2016, 07, 05),
-    end: new Date (2016, 07, 10),
+    start: vis.moment().add(-23, 'hours'), // changed so its faster
+    end: vis.moment().add(1, 'hours'),
     locale:'en-US',
     zoom: 1000 * 60 * 60,
     min: new Date(2016, 06, 01),
@@ -218,17 +218,10 @@ var options = {
     zoomMin: 1000 * 60 * 60 * 6,
     zoomMax: 1000 * 60 * 60 * 24 * 365 * 6,
     height: '100%'
-};
-                
-                function startLocation(){
-                    var range = timeline.getWindow();
-                    var interval = range.end - range.start;
-                    graph2d.setWindow(now - interval, now, {animation: false});
-                }
-                
-                
+};            
   // Create a Timeline
   var timeline = new vis.Timeline(container, items, options, groups);
+                
 </script>
             
             <div>

@@ -132,7 +132,8 @@ p { margin:0 }
 }
 
 .vis-item{
-    -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0,255));
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0,255));
+    border: 2px;
 }
 /* -----------------------
 GROUPS

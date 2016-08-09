@@ -55,7 +55,7 @@
         
          {
             id:'0', 
-            content:'<a href="">The Reign of John Horen the III</a><span> - 18th of the Deep Cold 1568 - Present</span>', 
+            content:'<a href="https://www.lordofthecraft.net/forums/topic/148046-coronation-of-john-iii/">The Reign of John Horen the III</a><span> - 18th of the Deep Cold 1568 - Present</span>', 
             start:'2016-08-05T00:00:00',
             end: vis.moment(),
             group:1,
@@ -151,14 +151,6 @@
         },
 
         {
-            id:'10.5', 
-            content:'<a href="   https://www.lordofthecraft.net/forums/topic/148848-the-imperial-johannesburg-games/" target="_blank">The Imperial Johannesburg Games</a><p>9th Sun&rsquo;s Smile 1571</p>', 
-            start:'2016-08-07T21:00:00', 
-            group: 1,
-            className:'domestic'
-        }, 
-
-        {
             id:'11', 
             content:'<a href="  https://www.lordofthecraft.net/forums/topic/148852-imperial-writ-of-ennoblement-for-the-house-of-crast-1571" target="_blank">Imperial Writ: Ennoblement of House Crast</a><p>10th Sun&rsquo;s Smile 1571</p>', 
             start:'2016-08-07T22:00:00', 
@@ -211,7 +203,34 @@
             group: 1,
             className:'crown'
         },   
-                 
+             
+        {
+            id:'18', 
+            content:'<a href="     https://www.lordofthecraft.net/forums/topic/148929-the-dominion-of-malin/?page=1" target="_blank">The Dominion Of Malin</a><p>17th The Amber Cold 1571</p>', 
+            start:'2016-08-09T05:00:00', 
+            group: 1,
+            className:'diplomacy'
+        },  
+        
+        
+        {
+            id:'19', 
+            content:'<a href="   https://www.lordofthecraft.net/forums/topic/148848-the-imperial-johannesburg-games/" target="_blank">The Imperial Johannesburg Games</a><p>11th Grand Harvest 1571</p>', 
+            start:'2016-08-13T23:00:00', 
+            group: 1,
+            className:'domestic'
+        }, 
+        
+        //Months start and end at 12 Noon.
+        //Sunday    - Monday    ~ Sun's Smile
+        //Monday    - Tuesday   ~ The Amber Cold
+        //Tuesday   - Wednesday ~ The Deep Cold
+        //Wednesday - Thursday  ~ Snow's Maiden
+        //Thursday  - Friday    ~ Malin's Welcome
+        //Friday    - Saturday  ~ The First Seed
+        //Saturday  - Sunday    ~ The Grand Harvest
+       
+        
     ]);
                 
 //Groups          
@@ -226,8 +245,8 @@ var groups = new vis.DataSet([
                       
   // Configuration for the Timeline
 var options = {
-    start: vis.moment().add(-23, 'hours'), 
-    end: vis.moment().add(1, 'hours'),
+    start: vis.moment().add(-44, 'hours'), 
+    end: vis.moment().add(4, 'hours'),
     locale:'en-US',
     zoom: 1000 * 60 * 60,
     min: new Date(2016, 06, 01),
